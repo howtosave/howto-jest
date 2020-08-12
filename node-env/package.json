@@ -1,0 +1,16 @@
+{
+  "name": "jest-node-env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env NODE_ENV=development node index.js",
+    "test": "jest --config ./jest.config.js --forceExit --detectOpenHandles"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.3.0"
+  },
+  "license": "MIT"
+}
