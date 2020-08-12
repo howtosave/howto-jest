@@ -8,6 +8,7 @@ require('dotenv').config({
   path: require('fs').existsSync(`.env.${process.env.NODE_ENV}.local`)
     ? `.env.${process.env.NODE_ENV}.local` : `.env.${process.env.NODE_ENV}`,
 });
+console.log(`Running in *${process.env.NODE_ENV}* mode`);
 
 //
 // modules

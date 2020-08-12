@@ -1,16 +1,27 @@
 {
   "name": "jest-node-env",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "env NODE_ENV=development node index.js",
-    "test": "jest --config ./jest.config.js --forceExit --detectOpenHandles"
+    "dev": "env NODE_ENV=development nodemon --exec 'node' src/index.js",
+    "start": "env NODE_ENV=production node src/index.js",
+    "test": "jest --config ./jest.config.js --forceExit --detectOpenHandles",
+    "testmon": "jest --watch --config ./jest.config.js --forceExit --detectOpenHandles"
   },
   "dependencies": {
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.4",
     "jest": "^26.3.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "tests/*",
+      "docs/*",
+      "node_modules"
+    ],
+    "delay": "2500"
   },
   "license": "MIT"
 }
