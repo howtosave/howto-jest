@@ -103,6 +103,7 @@ public/nitroweb
 public/nitroapi/stat-json/*.json
 # build output directory
 build/
+dist/
 # local env files
 .env
 .env.local
