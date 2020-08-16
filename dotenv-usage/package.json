@@ -1,0 +1,15 @@
+{
+  "name": "dotenv-usage",
+  "private": true,
+  "version": "1.0.0",
+  "description": "dotenv usage",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development DOTENV_CONFIG_PATH=.env.development yarn start",
+    "start:prod": "NODE_ENV=production DOTENV_CONFIG_PATH=.env.production yarn start",
+    "start:stage": "NODE_ENV=staging DOTENV_CONFIG_PATH=.env.staging yarn start"
+  },
+  "dependencies": {
+    "dotenv": "~8.2.0"
+  }
+}
