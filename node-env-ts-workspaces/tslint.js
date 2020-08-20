@@ -1,3 +1,6 @@
+//
+// tslint.js
+//
 
 const rules_for_commonjs = {
   "no-var-requires": false,
