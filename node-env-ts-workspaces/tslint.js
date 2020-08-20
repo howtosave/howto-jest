@@ -3,6 +3,9 @@ const rules_for_commonjs = {
   "no-var-requires": false,
 };
 
+const rules_being_redundant = {
+    "no-console": false,
+};
 
 module.exports = {
   "defaultSeverity": "error",
@@ -12,7 +15,7 @@ module.exports = {
   "jsRules": {},
   "rules": {
     ...rules_for_commonjs,
-    "no-console": false
+    ...rules_being_redundant,
   },
   "rulesDirectory": []
 }

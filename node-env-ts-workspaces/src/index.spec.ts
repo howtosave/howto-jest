@@ -4,7 +4,9 @@ const echo = require('./index');
 
 describe("# Index", () => {
   it('Should be defined', async done => {
+    /// @ts-ignore
     expect(global._PREFIX).toBeDefined();
+    expect(process.env.HOST).toBeDefined();
     done();
   });
 

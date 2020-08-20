@@ -17,8 +17,7 @@ const world = require('my-world');
 //
 // modules
 //
-const host = `${process.env.HOST}:${process.env.PORT}`;
 
 module.exports = (msg: string): string => (
-  `${msg} from ${hello()}.${world()}@${host}`
+  `${msg} from ${hello()}.${world()}@${process.env.HOST}`
 );
