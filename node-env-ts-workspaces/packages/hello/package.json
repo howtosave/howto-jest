@@ -1,0 +1,19 @@
+{
+  "name": "my-hello",
+  "version": "1.0.0",
+  "description": "My Hello lib",
+  "author": "tiglek@gmail.com",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: test on the root workspace\" && exit 1"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "typescript": "^3.9.7"
+  },
+  "license": "MIT"
+}
