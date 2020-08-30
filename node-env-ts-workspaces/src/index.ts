@@ -12,12 +12,14 @@ require('dotenv').config({
 const hello = require('my-hello');
 const world = require('my-world');
 
-// console.log(`Running in *${process.env.NODE_ENV}* mode`);
+function _helloWorld(msg: string): string {
+  return `${msg} from ${hello()}.${world()}@${process.env.HOST}`;
+}
 
 //
 // modules
 //
 
 module.exports = (msg: string): string => (
-  `${msg} from ${hello()}.${world()}@${process.env.HOST}`
+  _helloWorld(msg)
 );
